@@ -18,11 +18,6 @@ pipeline {
                 }
             }
         }
-        stage('Publish') {
-            steps {
-                step([fileIncludePattern: '**/index.html'])
-            }
-        }
         stage('Post') {
             steps {
                 echo 'Tests Finished'
