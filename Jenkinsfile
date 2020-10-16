@@ -20,7 +20,7 @@ pipeline {
         }
         stage('Publish') {
             steps {
-                step([$class: 'Publisher', fileIncludePattern: '**/index.html'])
+                step([fileIncludePattern: '**/index.html'])
             }
         }
         stage('Post') {
