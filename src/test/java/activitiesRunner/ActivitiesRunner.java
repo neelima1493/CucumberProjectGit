@@ -11,7 +11,7 @@ import cucumber.api.junit.Cucumber;
 		features = "src/test/java/Features",
 		glue = {"stepDefinition"},
 		tags = {"@OrangeHRM"},
-		plugin = { "pretty", "html:target/cucumber-reports/OrangeHRM-Reports"},
+		plugin = { "pretty", "html:target/cucumber-reports/OrangeHRM-Reports" , "json:target/cucumber-reports/OrangeHRM"},
 		strict = true
 )
 
